@@ -1,0 +1,20 @@
+
+
+
+
+
+
+
+<%- include("header")-%>
+
+<div class="content">
+    <form class="blogform" action="/delete" method="post">
+        <div class="del">
+            <h2> <%= blogTittle %></h2>
+            <button name="delete" value=<%= blogId%>>delete</button>
+        </div>
+        <p> <%= blogContent %></p>
+    </form>
+</div>
+
+<%-include("footer") -%>

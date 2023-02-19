@@ -1,0 +1,21 @@
+<%- include("header")-%>
+
+
+    <!-- <div class="content">
+        <h1 style="text-align: center;margin-bottom: 2rem;">Content</h1>
+        <h2>day 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quam libero doloribus minima cupiditate, atque cumque dicta hic nam repudiandae!</p>
+
+    </div> -->
+
+    <h1 style="text-align: center;">Compose</h1>
+
+    <form action="/compose" method="post">
+        <label for="">Tittle</label>
+        <input type="text" name="heading" placeholder="Heading" required>
+        <label for="">Blog</label>
+        <textarea style="resize:none" rows="10" name="blog" placeholder="Write your blog"></textarea>
+        <button type="submit">Publish</button>
+    </form>
+
+<%-include("footer") -%>

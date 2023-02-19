@@ -1,0 +1,22 @@
+
+
+
+
+
+<%-include("header")-%>
+
+
+    <h1 style="text-align: center;margin-bottom: 2rem;">My Blogs</h1>
+
+    <%for(var i = 0; i < blogs.length; i++){%>
+        <div class="content">
+            <h2> <%= blogs[i].tittle %></h2>
+            <p> <%= blogs[i].content.substring(0, 110) + " ....."%>
+                <a href="/blogs/<%=blogs[i]._id%>">Read More ...</a>
+            </p>
+        </div>
+    <%}%>
+
+    <a class="a_btn" href="/compose">Add a Blog</a>
+
+<%-include("footer")-%>
